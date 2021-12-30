@@ -1,0 +1,142 @@
+Usted ha sido contratado por un grupo de emprendedores para automatizar las ventas de catálogo de computadores. Considerando que usted se está formando en MisionTIC 2022, desea contratarlo para el desarrollo de una aplicación demo para gestionar inicialmente el inventario de dos tipos de computadores.
+
+Todos los computadores tienen como características: código, procesador, memoria y disco. Del equipo portátil es relevante el atributo color y del computador de escritorio el tamaño de la pantalla. Considere la especificación mediante el siguiente diagrama UML:
+
+
+
+
+procesarComandos
+
+En la clase Inventario, se debe definir esta función para procesar los siguientes comandos:
+
+Agregar computador: Opción 1
+
+
+Sirve para agregar un computador portátil o de escritorio:
+
+Tipo
+
+Comando para agregar un computador
+
+Portátil
+
+1&portatil&codigo&procesador&memoria&disco&color
+
+ 
+
+Ejemplo:
+
+1&portatil&ABC123&3000&16&256&Negro
+
+Escritorio
+
+1&escritorio&codigo&procesador&memoria&disco&tamaño
+
+ 
+
+Ejemplo:
+
+1&escritorio&XYZ321&3667&32&512&21
+
+ 
+
+Listar computadores: Opción 2
+
+Se debe mostrar la frase “***Inventario de computadores***” seguida por los vehículos en el orden que fueron agregados.
+
+Si se trata de un computador portátil se mostrará así:
+
+\tComputador portatil - Código: ABC123
+\tprocesador: 3000 MHz
+\tmemoria: 16 GB
+\tdisco: 256 GB
+\tcolor: Negro
+ 
+
+Si se trata de un computador de escritorio se mostrará así:
+
+\tComputador escritorio - Código: XYZ321
+\tprocesador: 3667 MHz
+\tmemoria: 32 GB
+\tdisco: 512 GB
+\ttamaño pantalla: 21'
+ 
+
+Nota 1: recuerde que \t indica que se correrá la línea una tabulación a la derecha.
+
+Nota 2: Observe que el único comando que tiene salida es el listar computadores.
+
+ 
+
+Salir: Opción 3
+
+Nota 3: En este ejercicio se requiere subir cuatro archivos. 
+
+Uno correspondiente a la clase Computador llamado Computador.java,
+otro correspondiente al computador portátil llamado Portatil.java
+otro correspondiente al computador de escritorio llamado Escritorio.java
+otro correspondiente al inventario llamado Inventario.java (aquí va el main)
+Nota 4: Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
+
+Ejemplo:
+
+Un ejemplo de ejecución del programa es el siguiente:
+
+
+Entrada
+
+Salida
+
+1&portatil&ABC123&3000&16&256&Negro
+
+1&escritorio&XYZ321&3667&32&512&21
+
+1&escritorio&UVW987&2667&8&128&19
+
+1&portatil&DEF456&2000&12&256&Gris
+
+2
+
+3
+
+***Inventario de computadores***
+
+       Computador portatil - Código: ABC123
+
+       procesador: 3000 MHz
+
+       memoria: 16 GB
+
+       disco: 256 GB
+
+       color: Negro
+
+       Computador escritorio - Código: XYZ321
+
+       procesador: 3667 MHz
+
+       memoria: 32 GB
+
+       disco: 512 GB
+
+       tamaño pantalla: 21'
+
+       Computador escritorio - Código: UVW987
+
+       procesador: 2667 MHz
+
+       memoria: 8 GB
+
+       disco: 128 GB
+
+       tamaño pantalla: 19'
+
+       Computador portatil - Código: DEF456
+
+       procesador: 2000 MHz
+
+       memoria: 12 GB
+
+       disco: 256 GB
+
+       color: Gris
